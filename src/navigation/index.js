@@ -10,9 +10,33 @@ const Stack = createNativeStackNavigator();
 export default function AppNavigation() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="Home">
-        <Stack.Screen name="Home" component={Home} />
-        <Stack.Screen name="Details" component={Details} />
+      <Stack.Navigator
+        initialRouteName="Home"
+        screenOptions={{
+          headerStyle: {
+            backgroundColor: '#174d38'
+          },
+          headerTintColor: '#ffffff',
+          headerTitleStyle: {
+            fontWeight: 'bold'
+          }
+        }}
+      >
+        <Stack.Screen
+          name="Home"
+          component={Home}
+          options={{
+            title: 'Raízes de Garanhuns'
+          }}
+        />
+
+        <Stack.Screen
+          name="Details"
+          component={Details}
+          options={{
+            title: 'Detalhes do local'
+          }}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );

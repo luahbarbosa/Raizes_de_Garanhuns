@@ -7,7 +7,23 @@ import {
   View
 } from 'react-native';
 
+import { CATEGORY_COLORS } from '../../constants/categories';
+
 export default function PlaceCard({ place, onPress }) {
+  const categoryColors = CATEGORY_COLORS[place.category];
+
+  const chipStyle = categoryColors
+    ? {
+        backgroundColor: categoryColors.background
+      }
+    : {};
+
+  const chipTextStyle = categoryColors
+    ? {
+        color: categoryColors.color
+      }
+    : {};
+
   return (
     <Pressable
       style={({ pressed }) => [
@@ -23,22 +39,22 @@ export default function PlaceCard({ place, onPress }) {
       />
 
       <View style={styles.content}>
-        <View style={styles.categoryContainer}>
-          <Text style={styles.category}>{place.category}</Text>
+        <View style={[styles.categoryContainer, chipStyle]}>
+          <Text style={[styles.category, chipTextStyle]}>
+            {place.category}
+          </Text>
         </View>
+
+        <Text style={styles.neighborhood}>{place.neighborhood}</Text>
 
         <Text style={styles.name}>{place.name}</Text>
 
-        <Text style={styles.neighborhood}>
-          Bairro: {place.neighborhood}
-        </Text>
-
-        <Text style={styles.summary} numberOfLines={3}>
+        <Text style={styles.summary} numberOfLines={2}>
           {place.summary}
         </Text>
 
         <Text style={styles.detailsText}>
-          Toque para ver os detalhes →
+          Ver detalhes →
         </Text>
       </View>
     </Pressable>
@@ -48,30 +64,27 @@ export default function PlaceCard({ place, onPress }) {
 const styles = StyleSheet.create({
   card: {
     backgroundColor: '#ffffff',
-    borderRadius: 24,
-    marginBottom: 20,
+    borderRadius: 14,
+    marginBottom: 18,
     overflow: 'hidden',
-    borderWidth: 1,
-    borderColor: '#f0ded2',
-    elevation: 5,
-    shadowColor: '#3d1f10',
+    elevation: 4,
+    shadowColor: '#000000',
     shadowOffset: {
       width: 0,
-      height: 3
+      height: 2
     },
-    shadowOpacity: 0.18,
-    shadowRadius: 6
+    shadowOpacity: 0.15,
+    shadowRadius: 4
   },
 
   cardPressed: {
-    opacity: 0.75,
-    transform: [{ scale: 0.99 }]
+    opacity: 0.75
   },
 
   image: {
     width: '100%',
     height: 190,
-    backgroundColor: '#e7d9cd'
+    backgroundColor: '#d9d9d9'
   },
 
   content: {
@@ -80,42 +93,40 @@ const styles = StyleSheet.create({
 
   categoryContainer: {
     alignSelf: 'flex-start',
-    backgroundColor: '#f6e3d1',
     borderRadius: 20,
     paddingHorizontal: 12,
     paddingVertical: 5,
-    marginBottom: 10
+    marginBottom: 8
   },
 
   category: {
-    color: '#8a3324',
     fontSize: 12,
     fontWeight: '700'
   },
 
-  name: {
-    color: '#2b1a12',
-    fontSize: 21,
-    fontWeight: 'bold',
-    marginBottom: 5
+  neighborhood: {
+    color: '#666666',
+    fontSize: 13,
+    marginBottom: 4
   },
 
-  neighborhood: {
-    color: '#6b5b50',
-    fontSize: 14,
-    marginBottom: 10
+  name: {
+    color: '#222222',
+    fontSize: 21,
+    fontWeight: 'bold',
+    marginBottom: 6
   },
 
   summary: {
-    color: '#4a3a30',
+    color: '#444444',
     fontSize: 15,
     lineHeight: 22
   },
 
   detailsText: {
-    color: '#d97b29',
+    color: '#174d38',
     fontSize: 14,
     fontWeight: 'bold',
-    marginTop: 14
+    marginTop: 12
   }
 });

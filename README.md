@@ -1,4 +1,4 @@
-# Conheça Garanhuns
+# Raízes de Garanhuns
 
 Projeto final da disciplina de Programação em Dispositivos Móveis.
 
@@ -13,18 +13,20 @@ Projeto final da disciplina de Programação em Dispositivos Móveis.
 O aplicativo apresenta um roteiro afetivo com locais turísticos, culturais,
 naturais e religiosos de Garanhuns. O usuário pode pesquisar os locais por
 nome, categoria ou bairro e abrir uma tela com informações detalhadas de
-cada um, incluindo endereço, horário de funcionamento e condições de entrada.
+cada um, incluindo endereço, horário de funcionamento, condições de entrada
+e informações de acessibilidade.
 
 ## Funcionalidades
 
 - Listagem de locais com `FlatList`
 - Pesquisa por nome, categoria ou bairro
+- Filtro por categorias (Tudo, História, Natureza, Cultura, Gastronomia, Religião)
 - Navegação entre telas (Home → Details)
 - Passagem e recuperação de parâmetros entre telas
-- Tela de detalhes com informações completas
+- Tela de detalhes com informações completas via `InfoCard`
 - Indicador de carregamento (`ActivityIndicator`)
-- Tratamento de lista vazia
-- Campo personalizado "Entrada" (`admission`)
+- Tratamento de lista vazia (`EmptyState`)
+- Campos personalizados: Acessibilidade e Entrada
 
 ## Tecnologias
 
@@ -55,18 +57,31 @@ npx expo start
 ```
 src
 ├── components
-│   └── PlaceCard
+│   ├── CategoryFilter
+│   ├── EmptyState
+│   ├── InfoCard
+│   ├── Loading
+│   ├── PlaceCard
+│   └── SearchBar
+├── constants
+│   └── categories.js
 ├── data
 │   └── places.js
-└── pages
-    ├── Home
-    └── Details
+├── navigation
+│   └── index.js
+└── screens
+    ├── Details
+    └── Home
 ```
 
 ## Dificuldades encontradas
 
-_(preencher com as dificuldades reais do grupo durante o desenvolvimento)_
+- Organizar o sistema de categorias com cores dinâmicas por categoria
+- Implementar o layout da tela de detalhes com Hero image e gradiente
+- Integrar filtro de categorias com pesquisa por texto simultaneamente
 
 ## Divisão das atividades
 
-_(preencher com a divisão de tarefas entre os integrantes)_
+- Debora Gomes: Estrutura do projeto, dados e navegação
+- Jamille Galdino: Tela Home, SearchBar e CategoryFilter
+- Luana Bezerra: Tela Details, InfoCard e componentes auxiliares
