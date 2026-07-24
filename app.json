@@ -1,0 +1,18 @@
+{
+  "expo": {
+    "name": "Raízes de Garanhuns",
+    "slug": "raizes-de-garanhuns",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "assets/icons/icon.png",
+    "userInterfaceStyle": "light",
+
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.raizes.garanhuns"
+    },
+    "android": {
+      "package": "com.raizes.garanhuns"
+    }
+  }
+}
