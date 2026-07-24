@@ -99,9 +99,6 @@ export default function Home({ navigation }) {
   return (
     <View style={styles.container}>
       <View style={styles.header}>
-        <Text style={styles.title}>
-          Raízes de Garanhuns
-        </Text>
 
         <Text style={styles.subtitle}>
           Descubra a história, a natureza e a cultura que

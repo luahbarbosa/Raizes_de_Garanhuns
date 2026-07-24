@@ -13,7 +13,7 @@ export default function EmptyState() {
       </Text>
 
       <Text style={styles.message}>
-        Tente pesquisar por outro nome, categoria ou bairro.
+        Tente pesquisar por outro nome ou categoria.
       </Text>
     </View>
   );

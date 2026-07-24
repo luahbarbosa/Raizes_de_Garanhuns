@@ -20,7 +20,7 @@ export default function SearchBar({ value, onChangeText }) {
         style={styles.input}
         value={value}
         onChangeText={onChangeText}
-        placeholder="Buscar por nome, categoria ou bairro..."
+        placeholder="Buscar por nome ou categoria..."
         placeholderTextColor="#777777"
         autoCapitalize="none"
         autoCorrect={false}
