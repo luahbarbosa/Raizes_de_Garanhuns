@@ -26,7 +26,7 @@ export default function Details({ route }) {
     >
       <View style={styles.heroContainer}>
         <Image
-          source={{ uri: place.image }}
+          source={typeof place.image === 'string' ? { uri: place.image } : place.image}
           style={styles.heroImage}
           resizeMode="cover"
         />

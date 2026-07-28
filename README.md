@@ -86,6 +86,6 @@ Durante o desenvolvimento do projeto, as principais dificuldades enfrentadas pel
 
 A divisão de tarefas no grupo ocorreu da seguinte forma:
 
-*   **Debora Gomes**: Criação do arquivo de dados centralizado (`places.js`), pesquisa das informações históricas e turísticas reais de Garanhuns e preenchimento detalhado dos campos, incluindo o campo personalizado "Entrada".
-*   **Jamille Galdino**: Definição da identidade visual e paleta de cores personalizada, estilização dos cartões interativos (`PlaceCard`) com efeitos visuais de toque e diagramação das caixas de informação na tela de detalhes.
-*   **Luana Bezerra**: Configuração do roteamento e navegação com React Navigation em `App.js`, estruturação lógica das telas `Home` e `Details`, e implementação da barra de pesquisa com busca reativa.
+*   **Debora Gomes**: Adicionou mais três pontos turísticos: Mosteiro de São Bento, Vinícola e Igreja de Santo Antônio.
+*   **Jamille Galdino**: Adicionou a logo, alterou as cores e fez alguns ajustes no visual do aplicativo.
+*   **Luana Bezerra**: Organizou as descrições de todos os pontos turísticos, adicionou as imagens correspondentes e incluí o Cristo do Magano como novo ponto turístico no aplicativo.
