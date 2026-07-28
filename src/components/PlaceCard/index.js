@@ -17,7 +17,7 @@ export default function PlaceCard({ place, onPress }) {
       onPress={onPress}
     >
       <Image
-        source={{ uri: place.image }}
+        source={typeof place.image === 'string' ? { uri: place.image } : place.image}
         style={styles.image}
         resizeMode="cover"
       />
