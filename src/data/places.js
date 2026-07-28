@@ -2,14 +2,14 @@ import { CATEGORIES } from "../constants/categories";
 
 const places = [
   {
-    id: "1",
-    name: "Relógio das Flores",
-    category: CATEGORIES.NATURE,
-    neighborhood: "Heliópolis",
-    address: "Praça Tavares Correia, Heliópolis, Garanhuns",
-    openingHours: "Espaço público com visitação livre",
-    admission: "Entrada gratuita",
-    image: "https://i.pinimg.com/736x/c9/f8/fd/c9f8fd3859db39587d774bdb7a50384b.jpg",
+    id: '1',
+    name: 'Relógio das Flores',
+    category: 'Ponto turístico',
+    neighborhood: 'Heliópolis',
+    address: 'Praça Tavares Correia, Heliópolis, Garanhuns',
+    openingHours: 'Espaço público com visitação livre',
+    admission: 'Entrada gratuita',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/3/3a/WalberMoura_RelogioDasFlores_Garanhuns_PE.jpg',
     summary:
       "Um dos principais cartões-postais de Garanhuns, localizado no bairro de Heliópolis.",
     description:
@@ -32,14 +32,14 @@ const places = [
     accessibility: "Trilhas pavimentadas e rampas de acesso em algumas áreas do parque.",
   },
   {
-    id: "3",
-    name: "Parque Ruber van der Linden",
-    category: CATEGORIES.NATURE,
-    neighborhood: "Centro",
-    address: "Rua Manoel Clemente, Centro, Garanhuns",
-    openingHours: "Todos os dias, das 08h às 17h",
-    admission: "Entrada gratuita",
-    image: "https://scontent.fcau17-1.fna.fbcdn.net/v/t39.30808-6/514252664_24286665464290587_8478878259909682945_n.jpg?stp=dst-jpg_tt6&cstp=mx1144x536&ctp=s590x590&_nc_cat=108&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=C089Ymud-CwQ7kNvwHZiptr&_nc_oc=AdoA492OO36dVtGA5zSgumoLn-TWlEKqG6MKiwgRsLLYUWei0gcuoAYeUBYgEn94UczqxRCej_QN9YyX-3sLNPFD&_nc_zt=23&_nc_ht=scontent.fcau17-1.fna&_nc_gid=0NksnN07LVnpgqhvke9x2A&_nc_ss=7b289&oh=00_AQA21vk7ERqukBfNCsX7rm-_SjJyh083K_GlnXymJgR5YA&oe=6A646EA9",
+    id: '3',
+    name: 'Parque Ruber van der Linden',
+    category: 'Parque natural',
+    neighborhood: 'Santo Antônio',
+    address: 'Rua Manoel Clemente, Centro, Garanhuns',
+    openingHours: 'Ele funciona todos os dias, das 08h às 17h ',
+    admission: 'Entrada gratuita',
+    image: 'https://garanhunstour.com.br/wp-content/uploads/2024/01/IMG_4973-2-1024x683.jpg',
     summary:
       "Parque conhecido popularmente como Pau Pombo, com vegetação e espaços de contemplação.",
     description:
@@ -62,29 +62,28 @@ const places = [
     accessibility: "Acesso por escada. Não possui rampa para cadeirantes.",
   },
   {
-    id: "5",
-    name: "Centro Cultural Alfredo Leite Cavalcanti",
-    category: CATEGORIES.CULTURE,
-    neighborhood: "Santo Antônio",
-    address: "Av. Afonso Pena, 85, Santo Antônio, Garanhuns",
-    openingHours: "Conforme a programação cultural",
-    admission: "Entrada gratuita para exposições",
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQysBgChYeapkJ5LpwWgiHPIZ1yite7xlZ5aQDQx4_rfw&s=10",
+    id: '5',
+    name: 'Centro Cultural Alfredo Leite Cavalcanti',
+    category: 'Cultura',
+    neighborhood: 'Centro',
+    address: 'Av. Afonso Pena, 85 - Santo Antônio, Garanhuns  ',
+    openingHours: 'Conforme a programação cultural',
+    admission: 'Entrada gratuita para exposições',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/5/57/Centro_Cultural_-_Garanhuns%2C_Pernambuco%2C_Brasil_%288641288151%29.jpg',
     summary:
       "Espaço destinado à realização de exposições, apresentações e atividades culturais.",
     description:
-      "O Centro Cultural Alfredo Leite Cavalcanti funciona em um prédio de relevância histórica para a cidade. O espaço recebe exposições, apresentações artísticas, encontros e diferentes atividades relacionadas à cultura.",
-    accessibility: "Prédio com rampa de acesso e elevador. Banheiros acessíveis disponíveis.",
+      'O Centro Cultural Alfredo Leite Cavalcanti funciona em um prédio de relevância histórica para a cidade. O space recebe exposições, apresentações artísticas, encontros e diferentes atividades relacionadas à cultura.'
   },
   {
-    id: "6",
-    name: "Santuário Mãe Rainha",
-    category: CATEGORIES.RELIGION,
-    neighborhood: "Massaranduba",
-    address: "Rua Antônio Maria, Massaranduba, Garanhuns",
-    openingHours: "Diariamente das 06h30 às 17h",
-    admission: "Entrada gratuita",
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHp1ZnN_hyv3gtq0W1dCGxFocZgksF39Y3lYbLStReDw&s=10",
+    id: '6',
+    name: 'Santuário Mãe Rainha',
+    category: 'Turismo religioso',
+    neighborhood: 'Massaranduba',
+    address: 'Rua Antônio Maria - Massaranduba, Garanhuns',
+    openingHours: 'Visitação conforme as atividades religiosas, o portão do local costuma ficar aberto diariamente das 06h30 às 17h para turistas e fiéis',
+    admission: 'Entrada gratuita',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/a/a5/WalberMoura_SantuarioMaeRainha_Garanhuns_PE_03.jpg',
     summary:
       "Local de visitação religiosa situado em uma área elevada da cidade.",
     description:
@@ -107,20 +106,61 @@ const places = [
     accessibility: "Piso plano e pavimentado. Acesso livre para cadeirantes e carrinhos de bebê.",
   },
   {
-    id: "8",
-    name: "Mercado Municipal",
-    category: CATEGORIES.GASTRONOMY,
-    neighborhood: "Centro",
-    address: "Av. Barreto de Menezes, Centro, Garanhuns",
-    openingHours: "Segunda a sábado, das 06h às 17h",
-    admission: "Entrada gratuita",
-    image: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=900&h=600&fit=crop",
+    id: '8',
+    name: 'Mirante Cristo do Magano',
+    category: 'Turismo religioso',
+    neighborhood: 'Magano',
+    address: 'Morro do Magano, Garanhuns',
+    openingHours: 'Acesso livre (ao ar livre), recomendável a visitação durante o dia. Nota: O local encontra-se temporariamente fechado ou com acessos restritos devido a obras de requalificação.',
+    admission: 'Entrada gratuita',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/9/9c/Cristo_do_Magano_-_Garanhuns%2C_Pernambuco%2C_Brasil.jpg',
     summary:
       "Espaço tradicional com diverse opções de gastronomia regional e produtos locais.",
     description:
-      "O Mercado Municipal de Garanhuns é um ponto de encontro para quem deseja conhecer a culinária local. O local oferece pratos típicos do Agreste pernambucano, frutas, temperos e uma experiência cultural marcante.",
-    accessibility: "Entrada ampla com piso nivelado. Corredores acessíveis para cadeirantes.",
+      'Localizado a 1.030 metros de altitude no topo do Morro do Magano, o Mirante abriga uma estátua do Cristo crucificado com mais de 15 metros de altura, esculpida pelo artista plástico Renato Pantaleão em 1954. É considerado um dos pontos mais altos de Pernambuco, atraindo visitantes pela sua importância histórica, religiosa e pela belíssima vista das sete colinas da cidade.'
   },
+  {
+    id: '9',
+    name: 'Mosteiro de São Bento',
+    category: 'Turismo religioso / Histórico',
+    neighborhood: 'São José',
+    address: 'Praça Mosteiro de São Bento, 223, São José, Garanhuns - PE',
+    openingHours: 'Segunda a sexta-feira, das 10h às 12h e das 13h às 17h; sábados, das 08h às 12h e das 14h às 17h; domingos, das 14h às 15h50 e a partir das 17h20.',
+    admission: 'Entrada gratuita',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/9/9e/BRUNO_LIMA_MOSTEIRO_DE_S%C3%83O_BENTO_GARANHUNS_PE_%2840013240995%29.jpg',
+    summary:
+      'Mosteiro beneditino fundado em 1940, conhecido pela sua arquitetura em tijolos aparentes, canto gregoriano e licores artesanais.',
+    description:
+      'O Mosteiro de São Bento é um marco histórico, cultural e espiritual em Garanhuns. O complexo inclui uma bela capela projetada com tijolos aparentes que remetem à arquitetura medieval e conta com obras sacras de Cláudio Pastro. Os monges beneditinos mantêm a vida de oração e trabalho (ora et labora), fabricando licores, pães e o biscoito Bricelet na lojinha artesanal aberta a visitantes.'
+  },
+  {
+    id: '10',
+    name: 'Vinícola Vale das Colinas',
+    category: 'Enoturismo / Turismo rural',
+    neighborhood: 'Zona Rural',
+    address: 'Fazenda Bom Destino, Zona Rural, Garanhuns - PE',
+    openingHours: 'Sextas, das 12h às 18h; sábados, domingos e feriados, das 10h às 18h (aberto a partir das quintas nos meses de janeiro, julho, novembro e dezembro).',
+    admission: 'R$ 50,00 por adulto (R$ 25,00 para estudantes e idosos; menores acompanhados são isentos)',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/9/9b/Grape_Vineyard.jpg',
+    summary:
+      'A primeira vinícola boutique de Garanhuns, com cultivo de uvas finas europeias em clima de altitude.',
+    description:
+      'A Vinícola Vale das Colinas é pioneira no cultivo de uvas viníferas no Agreste de Pernambuco. A propriedade oferece visitas guiadas pelos vinhedos com explicações sobre o processo de produção de vinhos de inverno de alta qualidade, degustações orientadas em um chalé aconchegante, lojinha de frios artesanais e áreas de piquenique ao ar livre.'
+  },
+  {
+    id: '11',
+    name: 'Igreja Matriz de Santo Antônio',
+    category: 'Turismo religioso / Arquitetura',
+    neighborhood: 'Centro',
+    address: 'Avenida Santo Antônio, Centro, Garanhuns - PE',
+    openingHours: 'Diariamente, das 08h às 12h e das 14h às 18h (visitação fora dos horários das celebrações).',
+    admission: 'Entrada gratuita',
+    image: 'https://garanhunstour.com.br/wp-content/uploads/2024/01/Catedral-768x576.jpg',
+    summary:
+      'Catedral histórica no centro da cidade, dedicada ao padroeiro de Garanhuns, com bela fachada de estilo arquitetônico marcante.',
+    description:
+      'A Igreja Matriz de Santo Antônio (Catedral de Garanhuns) é o principal templo católico da cidade. Localizada no coração do centro histórico, destaca-se por sua imponente fachada e interior decorado que atrai fiéis e admiradores de arte e arquitetura religiosa. É palco de importantes festividades e celebrações da Diocese de Garanhuns.'
+  }
 ];
 
 export default places;
