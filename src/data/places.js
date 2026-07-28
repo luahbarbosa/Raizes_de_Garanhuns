@@ -4,7 +4,7 @@ const places = [
   {
     id: '1',
     name: 'Relógio das Flores',
-    category: 'Ponto turístico',
+    category: CATEGORIES.HISTORY,
     neighborhood: 'Heliópolis',
     address: 'Praça Tavares Correia, Heliópolis, Garanhuns',
     openingHours: 'Espaço público com visitação livre',
@@ -34,7 +34,7 @@ const places = [
   {
     id: '3',
     name: 'Parque Ruber van der Linden',
-    category: 'Parque natural',
+    category: CATEGORIES.NATURE,
     neighborhood: 'Santo Antônio',
     address: 'Rua Manoel Clemente, Centro, Garanhuns',
     openingHours: 'Ele funciona todos os dias, das 08h às 17h ',
@@ -64,7 +64,7 @@ const places = [
   {
     id: '5',
     name: 'Centro Cultural Alfredo Leite Cavalcanti',
-    category: 'Cultura',
+    category: CATEGORIES.CULTURE,
     neighborhood: 'Centro',
     address: 'Av. Afonso Pena, 85 - Santo Antônio, Garanhuns  ',
     openingHours: 'Conforme a programação cultural',
@@ -78,7 +78,7 @@ const places = [
   {
     id: '6',
     name: 'Santuário Mãe Rainha',
-    category: 'Turismo religioso',
+    category: CATEGORIES.RELIGION,
     neighborhood: 'Massaranduba',
     address: 'Rua Antônio Maria - Massaranduba, Garanhuns',
     openingHours: 'Visitação conforme as atividades religiosas, o portão do local costuma ficar aberto diariamente das 06h30 às 17h para turistas e fiéis',
@@ -108,7 +108,7 @@ const places = [
   {
     id: '8',
     name: 'Mirante Cristo do Magano',
-    category: 'Turismo religioso',
+    category: CATEGORIES.RELIGION,
     neighborhood: 'Magano',
     address: 'Morro do Magano, Garanhuns',
     openingHours: 'Acesso livre (ao ar livre), recomendável a visitação durante o dia. Nota: O local encontra-se temporariamente fechado ou com acessos restritos devido a obras de requalificação.',
@@ -122,7 +122,7 @@ const places = [
   {
     id: '9',
     name: 'Mosteiro de São Bento',
-    category: 'Turismo religioso / Histórico',
+    category: CATEGORIES.RELIGION,
     neighborhood: 'São José',
     address: 'Praça Mosteiro de São Bento, 223, São José, Garanhuns - PE',
     openingHours: 'Segunda a sexta-feira, das 10h às 12h e das 13h às 17h; sábados, das 08h às 12h e das 14h às 17h; domingos, das 14h às 15h50 e a partir das 17h20.',
@@ -136,7 +136,7 @@ const places = [
   {
     id: '10',
     name: 'Vinícola Vale das Colinas',
-    category: 'Enoturismo / Turismo rural',
+    category: CATEGORIES.GASTRONOMY,
     neighborhood: 'Zona Rural',
     address: 'Fazenda Bom Destino, Zona Rural, Garanhuns - PE',
     openingHours: 'Sextas, das 12h às 18h; sábados, domingos e feriados, das 10h às 18h (aberto a partir das quintas nos meses de janeiro, julho, novembro e dezembro).',
@@ -150,7 +150,7 @@ const places = [
   {
     id: '11',
     name: 'Igreja Matriz de Santo Antônio',
-    category: 'Turismo religioso / Arquitetura',
+    category: CATEGORIES.RELIGION,
     neighborhood: 'Centro',
     address: 'Avenida Santo Antônio, Centro, Garanhuns - PE',
     openingHours: 'Diariamente, das 08h às 12h e das 14h às 18h (visitação fora dos horários das celebrações).',
